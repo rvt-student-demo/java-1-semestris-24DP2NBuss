@@ -103,16 +103,17 @@ public class Chapter19 {
 
             System.out.println("Enter a word: ");
                 String word = reader.next();
+            System.out.println(" ");
 
+                int times = 1;
+                int NumOfTimes;
+                NumOfTimes = word.length();
 
-                int times;
-                times = word.length();
+                while (times <= NumOfTimes) {
+                    System.out.println(word);
+                    times = times + 1;
 
-
-                System.out.println(times);
-
-
-
+                }
 
             reader.close();
         }
