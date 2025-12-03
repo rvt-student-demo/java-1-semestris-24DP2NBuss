@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Chapter60 {
     
     public static void main (String[] args) {
-        Same_Sum();
+        Reverse_Order();
     }
 
     public static void Array_Sum() {
@@ -77,7 +77,24 @@ public class Chapter60 {
         + (valA[0]+valB[0]) + " " + (valA[1]+valB[1]) + " " 
         + (valA[2]+valB[2]) + " " + (valA[3]+valB[3]) );
    }
+
+   public static void Reverse_Order() {
+
+    int[] val = {0, 1, 2, 3}; 
+    int i;
+ 
+    System.out.println( "Original Array: " 
+        + val[0] + " " + val[1] + " " + val[2] + " " + val[3] );
+ 
+    // reverse the order of the numbers in the array
+    System.out.println("Reversed array: ");
+    for(i = 3; i > -1; i--) {
+        System.out.println(val[i]);
+    }
+
+   }
 }
+
 
 
 
